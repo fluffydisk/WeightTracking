@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+Data/*.png
+.idea/
+.vscode/
+Data/*.csv
+out/
