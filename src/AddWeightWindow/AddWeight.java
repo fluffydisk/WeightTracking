@@ -1,3 +1,5 @@
+package AddWeightWindow;
+
 import javax.swing.*;
 import java.awt.*;
 import org.jdesktop.swingx.JXDatePicker;
@@ -45,7 +47,7 @@ public class AddWeight extends JFrame {
         Enter.addActionListener((ActionEvent e)-> {
             Date date = DatePicker.getDate();
             String path = IsPhotoAdd.isSelected() ? PhotoPicker.getSelectedPath() : "";
-            int weight = Integer.parseInt(WeightInput.getText());
+            double weight = Double.parseDouble(WeightInput.getText());
 
             new CsvData(date, path, weight);
         });

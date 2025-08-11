@@ -1,3 +1,5 @@
+package AddWeightWindow;
+
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -6,12 +8,12 @@ public class CsvData {
     static private File CsvFile;
     private Date _date;
     private String _photoPath;
-    private int _weight;
+    private double _weight;
     private String data;
     public CsvData(
             Date date,
             String photoPath,
-            int weight
+            double weight
     ){
         _date = date; _photoPath = photoPath; _weight = weight;
         data = setData();

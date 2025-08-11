@@ -1,3 +1,5 @@
+package ShowGraphWindow;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,7 +17,7 @@ public class ShowGraph{
     private void CreatePng() throws IOException {
         List<String>Commands = List.of(
                 "python3",
-                "src/CsvGraph.py",
+                "src/ShowGraphWindow/CsvGraph.py",
                 "/home/omer/projects/WeightTracking/Data/data.csv",
                 "/home/omer/projects/WeightTracking/Data/graph.png");
         ProcessBuilder pb = new ProcessBuilder(Commands);
